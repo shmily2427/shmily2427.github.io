@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>shmily2427 | 首页</title>
+    <style>
+        body {
+            background: #fafafa;
+            font-family: "Segoe UI", sans-serif;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 42px;
+            color: #333;
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 28px;
+            color: #444;
+        }
+        a {
+            display: block;
+            font-size: 20px;
+            color: #0066cc;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>shmily2427</h1>
+    <h2>我的项目</h2>
+
+    <a href="https://shmily2427.github.io/emotion-folding/" target="_blank">
+        🎮 《情境折影》 - Fragments of Affection
+    </a>
+
+</body>
+</html>
