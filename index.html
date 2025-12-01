@@ -2,41 +2,119 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>shmily2427 | 首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王圣膏 | 作品主页</title>
     <style>
+        :root {
+            --bg-light: #f7f7f7;
+            --bg-dark: #1e1e1e;
+            --text-light: #222;
+            --text-dark: #eee;
+            --card-light: #ffffff;
+            --card-dark: #2c2c2c;
+            --primary: #4c8bf5;
+        }
+
         body {
-            background: #fafafa;
+            margin: 0;
+            padding: 0;
             font-family: "Segoe UI", sans-serif;
-            padding: 40px;
+            background: var(--bg-light);
+            color: var(--text-light);
+            transition: 0.3s ease;
         }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: var(--bg-dark);
+                color: var(--text-dark);
+            }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
         h1 {
-            font-size: 42px;
-            color: #333;
+            font-size: 48px;
+            margin-bottom: 10px;
         }
+
         h2 {
             margin-top: 40px;
-            font-size: 28px;
-            color: #444;
+            font-size: 26px;
+            opacity: 0.9;
         }
-        a {
-            display: block;
-            font-size: 20px;
-            color: #0066cc;
-            margin: 10px 0;
+
+        .card {
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 16px;
+            max-width: 650px;
+            text-align: left;
+            background: var(--card-light);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .card {
+                background: var(--card-dark);
+                box-shadow: 0 6px 14px rgba(255, 255, 255, 0.05);
+            }
+        }
+
+        .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 16px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 10px;
             text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.25s ease;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <h1>shmily2427</h1>
-    <h2>我的项目</h2>
+    <div class="container">
+        <h1>shmily2427</h1>
+        <h2>作品集 Projects</h2>
 
-    <a href="https://shmily2427.github.io/emotion-folding/" target="_blank">
-        🎮 《情境折影》 - Fragments of Affection
-    </a>
+        <!-- 项目展示卡片 -->
+        <div class="card">
+            <div class="project-title">🎮 《情境折影》 Fragments of Affection</div>
+            <div class="project-desc">
+                一个基于 Three.js 的 3D 互动情感作品。  
+                运用空间折叠视觉错觉，讲述“母亲与孩子”的视角与情感连接。
+            </div>
+            <a class="project-link" href="https://shmily2427.github.io/emotion-folding/" target="_blank">
+                👉 前往体验体验
+            </a>
+        </div>
 
+    </div>
 </body>
 </html>
